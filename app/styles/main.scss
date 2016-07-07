@@ -1,4 +1,8 @@
+// Custom bootstrap settings
+@import 'custom';
+
 // bower:scss
+@import 'bower_components/bootstrap/scss/bootstrap.scss';
 // endbower
 
 body {
