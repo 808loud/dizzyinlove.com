@@ -7,11 +7,15 @@ html.no-js
     meta(name='viewport' content='width=device-width, initial-scale=1')
     link(rel='apple-touch-icon' href='apple-touch-icon.png')
     // Place favicon.ico and apple-touch-icon.png in the root directory
-
-    // build:css styles/vendor.css
-    // bower:css
     
-    // endbower
+    link(href='https://fonts.googleapis.com/css?family=Roboto:400,700,900', rel='stylesheet', type='text/css')
+    link(href='https://fonts.googleapis.com/css?family=Reenie+Beanie', rel='stylesheet', type='text/css')
+    link(href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,700italic', rel='stylesheet', type='text/css')
+    
+    // build:css styles/vendor.css
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css')
+    //- bower:css
+    //- endbower
     // endbuild
 
     // build:css styles/main.css
@@ -19,16 +23,35 @@ html.no-js
     // endbuild
 
     // build:js scripts/vendor/modernizr.js
+    script(type='text/javascript', src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js')
+    script(src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js')
     //- script(src='../bower_components/modernizr/modernizr.js')
     // endbuild
 
-  body
+  body(data-spy='scroll', data-target='#navbar')
     | <!--[if lt IE 10]>
-    |   <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    |   <p class="browserupgrade">You are using an <strong>outdated</strong> browser. David and Liz will give you a high five if you <a href="http://browsehappy.com/">upgrade your browser</a>.</p>
     | <![endif]-->
-  a(href='https://github.com/808loud/dizzyinlove.com/issues?q=is%3Aopen+is%3Aissue+sort%3Acreated-asc') TODO
+    
+    a(href='https://github.com/808loud/dizzyinlove.com/issues?q=is%3Aopen+is%3Aissue+sort%3Acreated-asc') TODO
 
+    include navigation
+    
+    
     block content
+    
+    
+    .container-fluid.footer
+      .container
+        footer
+          p
+            i.glyphicon.glyphicon-copyright-mark
+            |  DizzyWebDesign
+          p
+            i.glyphicon.glyphicon-heart
+            |  Crafted with love and 
+            a(href='http://getbootstrap.com/') Bootstrap
+          p.script-font — David & Lizzy
 
     // Google Analytics: change UA-XXXXX-X to be your site's ID.
     script.

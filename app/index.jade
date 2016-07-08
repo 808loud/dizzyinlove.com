@@ -1,4 +1,323 @@
 extends layouts/default
 
 block content
-  h1 hi
+
+  .special
+    #home.jumbotron
+    
+  .clearfix
+  
+  #story.container
+    h2 Our story
+    .row
+      .col-sm-6.col-xs-12
+        h4 How we met
+        p
+          | Liz and David both went to the University of St. Thomas, and majored in Journalism. They both graduated in the class of 2010. You'd think that this was where they met, but surprisingly they never met in college.
+        p It wasn't until May 10th, 2012, that the two first met through a mutual friend.
+        p They bonded quickly, and starting in September, they began talking freqently.
+        img.img-responsive(src='images/story/st-thomas.jpg', height='250', width='585', alt='University of St. Thomas')
+      .col-sm-6.col-xs-12
+        h4 Our first date
+        p
+          | On December 13, 2012, Liz bravely attended David's company party as his +1. You would think this would be their first date. But Liz is adamant to this day that this was not their first date. I guess it doesn't count if it's free food and drinks...
+        p On January 4th, 2013, they went on their first date at La Grolla in St. Paul.
+        img.img-responsive(src='images/story/st-paul-la-grolla.jpg', height='250', width='585', alt='St. Paul, MN')
+    hr
+    .row
+      .col-sm-6.col-xs-12
+        h4 Adventures in Ireland
+        p Coming soon...
+        img.img-responsive(src='images/story/ireland.jpg', height='250', width='585', alt='Ireland')
+      .col-sm-6.col-xs-12
+        h4 How he proposed
+        p Check back later...
+        img.img-responsive(src='images/story/north-shore.jpg', height='250', width='585', alt='North Shore, MN')
+  #people.container
+    h2 Meet the Wedding Party
+    .row.people-1
+      .col-xs-6
+        .row
+          .col-sm-6.col-sm-push-6
+            img.img-responsive(src='images/people/molly.jpg', height='170', width='227', alt='')
+          .col-sm-6.col-sm-pull-6
+            h4 Molly Weismantel
+            h5 Maid of Honor
+            //- p Liz's best friend growing up, Molly is an architect in Los Angeles.</p>
+      .col-xs-6
+        .row
+          .col-sm-6
+            img.img-responsive(src='images/people/andrew.jpg', height='170', width='227', alt='')
+          .col-sm-6
+            h4 Andrew Monson
+            h5 Groomsman
+            //- p David's brother and a car-geek, Andrew is a mechanical engineer and lives in Ohio with his wife and their two crazy-adorable pets.</p>
+    .row.people-2
+      .col-xs-6
+        .row
+          .col-sm-6.col-sm-push-6
+            img.img-responsive(src='images/people/tara-niebeling.jpg', height='170', width='227', alt='')
+          .col-sm-6.col-sm-pull-6
+            h4 Tara Niebeling
+            h5 Bridesmaid
+      .col-xs-6
+        .row
+          .col-sm-6
+            img.img-responsive(src='images/people/weston.jpg', height='170', width='227', alt='')
+          .col-sm-6
+            h4 Weston Thayer
+            h5 Groomsman
+    .row.people-3
+      .col-xs-6
+        .row
+          .col-sm-6.col-sm-push-6
+            img.img-responsive(src='images/people/tara-olson.jpg', height='170', width='227', alt='')
+          .col-sm-6.col-sm-pull-6
+            h4 Tara Olson
+            h5 Bridesmaid
+      .col-xs-6
+        .row
+          .col-sm-6
+            img.img-responsive(src='images/people/matt-barber.jpg', height='170', width='227', alt='')
+          .col-sm-6
+            h4 Matthew Barber
+            h5 Groomsman
+            //- <p>David's former roommate and former co-worker (and former partner-in-crime), Matt is now a lawyer in Minneapolis.</p>
+    .row.people-4
+      .col-xs-6
+        .row
+          .col-sm-6.col-sm-push-6
+            img.img-responsive(src='images/people/brittney.jpg', height='170', width='227', alt='')
+          .col-sm-6.col-sm-pull-6
+            h4 Brittney Chaffee
+            h5 Bridesmaid
+      .col-xs-6
+        .row
+          .col-sm-6
+            img.img-responsive(src='images/people/chris.jpg', height='170', width='227', alt='')
+          .col-sm-6
+            h4 Christopher Werth
+            h5 Groomsman
+    .row.people-5
+      .col-xs-6
+        .row
+          .col-sm-6.col-sm-push-6
+            img.img-responsive(src='images/people/kelly.jpg', height='170', width='227', alt='')
+          .col-sm-6.col-sm-pull-6
+            h4 Kelly Peterson
+            h5 Bridesmaid
+      .col-xs-6
+        .row
+          .col-sm-6
+            img.img-responsive(src='images/people/jeff.jpg', height='170', width='227', alt='')
+          .col-sm-6
+            h4 Jeffery Blanchard
+            h5 Groomsman
+    .row.people-6
+      .col-xs-6
+        .row
+          .col-sm-6.col-sm-push-6
+            img.img-responsive(src='images/people/sam.jpg', height='170', width='227', alt='')
+          .col-sm-6.col-sm-pull-6
+            h4 Sam Thayer
+            h5 Personal Attendant
+      .col-xs-6
+        .row
+          .col-sm-6
+            img.img-responsive(src='images/people/nate.jpg', height='170', width='227', alt='')
+          .col-sm-6
+            h4 Nate Erickson
+            h5 Co-Officiant
+    .row.people-7
+      .col-xs-6
+        .row
+          .col-sm-6.col-sm-push-6
+            img.img-responsive(src='images/people/anna-lisa.jpg', height='170', width='227', alt='')
+          .col-sm-6.col-sm-pull-6
+            h4 Anna-Lisa DeVaan
+            h5 Personal Attendant
+      .col-xs-6
+        .row
+          .col-sm-6
+            img.img-responsive(src='images/people/matt-erickson.jpg', height='170', width='227', alt='')
+          .col-sm-6
+            h4 Matt Erickson
+            h5 Co-Officiant
+  #event.container
+    h2 Event Details
+    .row
+      .col-sm-12 More information coming soon.
+  //-
+    <div class="container" id="event">
+    <h2>Event Details</h2>
+    <div class="row">
+    <div class="col-sm-3">
+    <h3>Ceremony</h3>
+    <h4>2:00pm</h4>
+    <h5>Dean and Karen Erickson's<br>
+    303 Lake Avenue North<br>
+    Spicer, MN</h5>
+    </div>
+    <div class="col-sm-3">
+    <h3>Social Hour</h3>
+    <h4>3:00pm</h4>
+    <h5>Prairie Woods Environmental Learning Center<br>
+    12718 10th St NE<br>
+    Spicer, MN</h5>
+    </div>
+    <div class="col-sm-3">
+    <h3>Dinner</h3>
+    <h4>5:00pm</h4>
+    <h5>Prairie Woods</h5>
+    </div>
+    <div class="col-sm-3">
+    <h3>Dance</h3>
+    <h4>7:00pm - 10:30pm</h4>
+    <h5>Prairie Woods</h5>
+    </div>
+    </div>
+    </div> <!-- /container
+  //-
+    <section id="map-ericksons" class="map">
+    </section>
+  #hashtag.container
+    h2 Wedding Hashtag
+    .row
+      .col-sm-6
+        br
+        h1 #dizzyinlove
+        br
+        br
+        p.lead P.S. In case you were wondering...
+        p Our couple name is Dizzy (David + Lizzy).
+        p.small
+          | (It's also the name of our award-seeking rap duo. See the included album art from our upcoming album release. It's gonna be hot fire).
+      .col-sm-6
+        img.img-responsive(src='images/dizzy-album-art.jpg')
+  #gifts.container
+    h2 Gift Registries
+    .row
+      .col-xs-6.col-sm-3
+        a(href='http://www.honeyfund.com/wedding/adventuresofdizzy')
+          img.img-responsive(src='images/gifts/honeyfund.png', height='150', width='150', alt='CB2')
+      .col-xs-6.col-sm-3
+        a(href='http://www.cb2.com/gift-registry/david-monson-and-liz-erickson/r5413777')
+          img.img-responsive(src='images/gifts/cb2.png', height='150', width='150', alt='CB2')
+      .col-xs-6.col-sm-3
+        a(href='http://www.target.com/gift-registry/giftgiver?registryId=gAxCm3Za2qzzmwrDDMFwrQ&registryType=WEDDING')
+          img.img-responsive(src='images/gifts/target.png', height='150', width='150', alt='Gift name')
+      .col-xs-6.col-sm-3
+        a(href='http://www.amazon.com/gp/registry/wedding/3EZ33N5HOWS5U')
+          img.img-responsive(src='images/gifts/amazon.png', height='150', width='150', alt='Amazon')
+  #gallery.container
+    h2 Gallery
+    .container-fluid
+      .row
+        #gallery-engagement.carousel.slide(data-ride='carousel')
+          //- Indicators
+          ol.carousel-indicators
+            li.active(data-target='#gallery-engagement', data-slide-to='0')
+            li(data-target='#gallery-engagement', data-slide-to='1')
+            li(data-target='#gallery-engagement', data-slide-to='2')
+            li(data-target='#gallery-engagement', data-slide-to='3')
+            li(data-target='#gallery-engagement', data-slide-to='4')
+            li(data-target='#gallery-engagement', data-slide-to='5')
+          //- Wrapper for slides
+          .carousel-inner(role='listbox')
+            .item.active
+              img(src='images/gallery-engagement/cuddyphoto-Winter2016-023.jpg', alt='')
+            .item
+              img(src='images/gallery-engagement/cuddyphoto-Winter2016-062.jpg', alt='')
+            .item
+              img(src='images/gallery-engagement/cuddyphoto-Winter2016-042.jpg', alt='')
+            .item
+              img(src='images/gallery-engagement/cuddyphoto-Winter2016-068.jpg', alt='')
+            .item
+              img(src='images/gallery-engagement/cuddyphoto-Winter2016-078.jpg', alt='')
+            .item
+              img(src='images/gallery-engagement/cuddyphoto-Winter2016-080.jpg', alt='')
+          //- Controls
+          a.left.carousel-control(href='#gallery-engagement', role='button', data-slide='prev')
+            span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
+            span.sr-only Previous
+          a.right.carousel-control(href='#gallery-engagement', role='button', data-slide='next')
+            span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
+            span.sr-only Next
+  //-
+    <div class="container" id="rsvp">
+    <div class="row">
+    <h2>Don't Forget to RSVP</h2>
+    </div>
+    <div class="row">
+    <div class="col-sm-3 divider">
+    <h5>contact info</h5>
+    <div class="contact-address">
+    <ul>
+    <li>
+    <i class="fa fa-paper-plane"></i>
+    <div class="address-phone">
+    <h4>email</h4>
+    <span>dizzy@808loud.com</span>
+    </div>
+    </li>
+    <li>
+    <i class="fa fa-phone"></i>
+    <div class="address-phone">
+    <h4>phone</h4>
+    <p>David: 701.212.3499</p>
+    <p>Liz: 320.444.2733</p>
+    </div>
+    </li>
+    </ul>
+    </div>
+    </div>
+    <div class="col-sm-9">
+    <div class="contact-block">
+    <h5>Events Attending</h5>
+    <form class="contact_form" role="form" action="#">
+    <div class="row">
+    <div class="col-sm-6">
+    <div class="form-group">
+    <input type="text" class="form-control" id="name" name="name" placeholder="Your name" required="required">
+    </div>
+    <div class="form-group">
+    <input type="text" class="form-control" id="email" name="email" placeholder="Your email address" required="required">
+    </div>
+    <div class="form-group">
+    <select name="numberOfGuest" id="numberOfGuest" tabindex="1">
+    <option value="">Number of Guests</option>
+    <option value="1 Person">1 Total</option>
+    <option value="2 Persons">2 Total</option>
+    <option value="3 Persons">3 Total</option>
+    <option value="4 Persons">4 Total</option>
+    <option value="4 Persons">5 Total</option>
+    <option value="4 Persons">6 Total</option>
+    </select>
+    </div>
+    <div class="form-group">
+    <select name="eventAttending" id="eventAttending" tabindex="1">
+    <option value="">I am Attending</option>
+    <option value="All Event">All Event</option>
+    <option value="Wedding Ceremony">Wedding Ceremony</option>
+    <option value="Wedding Ceremony">Wedding Party</option>
+    </select>
+    </div>
+    </div>
+    <div class="col-sm-6">
+    <div class="form-group">
+    <textarea class="form-control" name="message" id="message" placeholder="Write your message"></textarea>
+    </div>
+    <div class="form-group">
+    <input type="submit" name="submit" class="btn default-btn btn-block" value="I AM ATTENDING">
+    </div>
+    </div>
+    <div class="col-sm-12">
+    <p class="contact-success">Your Message has been Successfully Sent!</p>
+    <p class="contact-error">Error! Something went wrong!</p>
+    </div>
+    </div>
+    </form>
+    </div> 
+    </div>
+    </div>
+    </div>
