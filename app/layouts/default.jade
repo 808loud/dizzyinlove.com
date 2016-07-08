@@ -12,19 +12,21 @@ html.no-js
     link(href='https://fonts.googleapis.com/css?family=Reenie+Beanie', rel='stylesheet', type='text/css')
     link(href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,700italic', rel='stylesheet', type='text/css')
     
-    // build:css styles/vendor.css
     link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css')
-    //- bower:css
-    //- endbower
-    // endbuild
+
+    //- // build:css styles/vendor.css
+    //- // bower:css
+    //- // endbower
+    //- // endbuild
 
     // build:css styles/main.css
     link(rel='stylesheet' href='styles/main.css')
     // endbuild
-
-    // build:js scripts/vendor/modernizr.js
+    
     script(type='text/javascript', src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js')
     script(src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js')
+
+    // build:js scripts/vendor/modernizr.js
     //- script(src='../bower_components/modernizr/modernizr.js')
     // endbuild
 
@@ -33,13 +35,9 @@ html.no-js
     |   <p class="browserupgrade">You are using an <strong>outdated</strong> browser. David and Liz will give you a high five if you <a href="http://browsehappy.com/">upgrade your browser</a>.</p>
     | <![endif]-->
     
-    a(href='https://github.com/808loud/dizzyinlove.com/issues?q=is%3Aopen+is%3Aissue+sort%3Acreated-asc') TODO
-
     include navigation
     
-    
     block content
-    
     
     .container-fluid.footer
       .container
