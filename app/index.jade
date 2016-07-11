@@ -243,81 +243,51 @@ block content
           a.right.carousel-control(href='#gallery-engagement', role='button', data-slide='next')
             span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
             span.sr-only Next
-  //-
-    <div class="container" id="rsvp">
-    <div class="row">
-    <h2>Don't Forget to RSVP</h2>
-    </div>
-    <div class="row">
-    <div class="col-sm-3 divider">
-    <h5>contact info</h5>
-    <div class="contact-address">
-    <ul>
-    <li>
-    <i class="fa fa-paper-plane"></i>
-    <div class="address-phone">
-    <h4>email</h4>
-    <span>dizzy@808loud.com</span>
-    </div>
-    </li>
-    <li>
-    <i class="fa fa-phone"></i>
-    <div class="address-phone">
-    <h4>phone</h4>
-    <p>David: 701.212.3499</p>
-    <p>Liz: 320.444.2733</p>
-    </div>
-    </li>
-    </ul>
-    </div>
-    </div>
-    <div class="col-sm-9">
-    <div class="contact-block">
-    <h5>Events Attending</h5>
-    <form class="contact_form" role="form" action="#">
-    <div class="row">
-    <div class="col-sm-6">
-    <div class="form-group">
-    <input type="text" class="form-control" id="name" name="name" placeholder="Your name" required="required">
-    </div>
-    <div class="form-group">
-    <input type="text" class="form-control" id="email" name="email" placeholder="Your email address" required="required">
-    </div>
-    <div class="form-group">
-    <select name="numberOfGuest" id="numberOfGuest" tabindex="1">
-    <option value="">Number of Guests</option>
-    <option value="1 Person">1 Total</option>
-    <option value="2 Persons">2 Total</option>
-    <option value="3 Persons">3 Total</option>
-    <option value="4 Persons">4 Total</option>
-    <option value="4 Persons">5 Total</option>
-    <option value="4 Persons">6 Total</option>
-    </select>
-    </div>
-    <div class="form-group">
-    <select name="eventAttending" id="eventAttending" tabindex="1">
-    <option value="">I am Attending</option>
-    <option value="All Event">All Event</option>
-    <option value="Wedding Ceremony">Wedding Ceremony</option>
-    <option value="Wedding Ceremony">Wedding Party</option>
-    </select>
-    </div>
-    </div>
-    <div class="col-sm-6">
-    <div class="form-group">
-    <textarea class="form-control" name="message" id="message" placeholder="Write your message"></textarea>
-    </div>
-    <div class="form-group">
-    <input type="submit" name="submit" class="btn default-btn btn-block" value="I AM ATTENDING">
-    </div>
-    </div>
-    <div class="col-sm-12">
-    <p class="contact-success">Your Message has been Successfully Sent!</p>
-    <p class="contact-error">Error! Something went wrong!</p>
-    </div>
-    </div>
-    </form>
-    </div> 
-    </div>
-    </div>
-    </div>
+  #rsvp.container
+    h2 Don't Forget to RSVP
+      .row
+        .col-sm-9.divider
+          form.contact_form(role='form', action='https://script.google.com/a/macros/808loud.com/s/AKfycby5mjN8k9kfpPobxtZnmz1PyMKre-1ilbyO0YsjOneUV2l1XVM/exec')
+            .row
+              .col-sm-4
+                .form-group
+                  input#email.form-control(type='text' name='email' placeholder='Email address' required='required')
+                .form-group
+                  select#totalAttending.form-control(name='totalAttending' required='required' tabindex='1')
+                    option(selected disabled) RSVP
+                    optgroup(label='How many will be tearing up the dance floor?')
+                      option(value='1') Solo mission. Look out.
+                      option(value='2') 2 and we will bring our dancing shoes
+                      option(value='3') 3 so we can sing in beautiful harmony
+                      option(value='4') 4 of us will be ready to rock
+                      option(value='5') 5 and the kids will likely eat lots of sugar on the way
+                      option(value='>5') 6+ bringing the party
+                    optgroup(label='Unable to attend ...')
+                      option(value='0') Visiting uncle Ed that weekend
+                      option(value='0') On a top secret spy mission
+                      option(value='0') Will forever regret this decision
+                      option(value='0') Literally can't even 
+              .col-sm-8
+                .form-group
+                  textarea#guestNames.form-control(name='guestNames', tabindex='1', rows='3', placeholder='Please list the names of all attendees here')
+                .form-group
+                  textarea#songRequests.form-control(name='songRequests', placeholder='What songs will get you out on the dance floor?')
+                .form-group
+                  textarea#misc.form-control(name='msc', placeholder='Anything else we should know?')
+                .form-group
+                  input.btn.default-btn(type='submit', name='submit', value='Submit')
+              .row
+                .col-sm-12
+                  p.contact-success Your Message has been Successfully Sent!
+                  p.contact-error Error! Something went wrong!
+        .col-sm-3
+          h5 contact info
+            i.fa.fa-paper-plane
+            .address-phone
+              h4 email
+              span dizzy@808loud.com
+            i.fa.fa-phone
+            .address-phone
+              h4 phone
+              p David: 701.212.3499
+              p Liz: 320.444.2733
