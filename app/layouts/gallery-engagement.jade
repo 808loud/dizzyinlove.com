@@ -13,22 +13,22 @@
   
 //- .container-fluid
 //-   .row
-#gallery_engagement.carousel.slide(data-ride="carousel")
+#gallery_engagement.carousel.slide(data-ride='carousel')
   // Indicators
   ol.carousel-indicators
     - for (var i = 0; i < gallerySlides.length; i++)
       - defaultSlide = (i == '0' ? 'active' : '')
       li(data-target='#gallery_engagement' data-slide-to='#{i}' class='#{defaultSlide}')
   // Slides
-  .carousel-inner(role="listbox")
+  .carousel-inner(role='listbox')
     - for (var i = 0; i < gallerySlides.length; i++)
       - defaultSlide = (i == '0' ? 'active' : '')
       .item(class='#{defaultSlide}')
-        img(src="#{imgPath}#{gallerySlides[i]}" alt='alt')
+        img(src='#{imgPath}#{gallerySlides[i]}' alt='alt')
   // Controls
-  a.left.carousel-control(href="#gallery_engagement" role="button" data-slide="prev")
-    span.glyphicon.glyphicon-chevron-left(aria-hidden="true")
+  a.left.carousel-control(href='#gallery_engagement' role='button' data-slide='prev')
+    span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
     span.sr-only Previous
-  a.right.carousel-control(href="#gallery_engagement" role="button" data-slide="next")
-    span.glyphicon.glyphicon-chevron-right(aria-hidden="true")
+  a.right.carousel-control(href='#gallery_engagement' role='button' data-slide='next')
+    span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
     span.sr-only Next

@@ -36,10 +36,11 @@ html.no-js
     | <![endif]-->
     
     include navigation
-    
+
+
     block content
-    
-    
+
+
     footer.footer.clearfix
       .container
         .row
@@ -65,20 +66,19 @@ html.no-js
               |  and 
               a(href='https://github.com/808loud/dizzyinlove.com/' target="_blank") GitHub
 
-
-    // Google Analytics: change UA-XXXXX-X to be your site's ID.
     script.
-      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-      e.src='//www.google-analytics.com/analytics.js';
-      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga('create','UA-XXXXX-X');ga('send','pageview');
+      !function(d,i,z,Z,y){d.GoogleAnalyticsObject=z;d[z]||(d[z]=function(){
+      (d[z].q=d[z].q||[]).push(arguments)});d[z].l=+new Date;Z=i.createElement('script');
+      y=i.scripts[0];Z.src='//www.google-analytics.com/analytics.js';
+      y.parentNode.insertBefore(Z,y)}(window,document,'ga');
+
+      ga('create', 'UA-75122415-1', 'dizzyinlove.com');
+      ga('send', 'pageview');
 
     // build:js scripts/vendor.js
     // bower:js
-    script(src='/bower_components/jquery/dist/jquery.js')
-    script(src='/bower_components/bootstrap/dist/js/bootstrap.js')
+    //- script(src='/bower_components/jquery/dist/jquery.js')
+    //- script(src='/bower_components/bootstrap/dist/js/bootstrap.js')
     // endbower
     // endbuild
 
@@ -96,7 +96,7 @@ html.no-js
     //- script(src='../bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js')
     //- script(src='../bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js')
     //- endbuild
-
+    
     // build:js scripts/scripts.js
     script(src='scripts/main.js')
     // endbuild

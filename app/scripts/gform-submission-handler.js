@@ -20,6 +20,7 @@ function getFormData() {
 
 function handleFormSubmit(event) {  // handles form submit withtout any jquery
   event.preventDefault();           // we are submitting via xhr below
+  $('input[type="submit"]').val('Submitting...').addClass('disabled');
   var data = getFormData();         // get the values submitted in the form
   var url = event.target.action;  //
   var xhr = new XMLHttpRequest();
@@ -29,8 +30,6 @@ function handleFormSubmit(event) {  // handles form submit withtout any jquery
   xhr.onreadystatechange = function() {
     // console.log( xhr.status, xhr.statusText )
     // console.log(xhr.responseText);
-    // console.log('huzzah!')
-    $('input[type="submit"]').val('Got it. Thanks!').addClass('disabled');
     return;
   };
   // url encode form data for sending as post data
@@ -38,6 +37,9 @@ function handleFormSubmit(event) {  // handles form submit withtout any jquery
       return encodeURIComponent(k) + '=' + encodeURIComponent(data[k])
   }).join('&')
   xhr.send(encoded);
+  // console.log('huzzah!')
+  $('input[type="submit"]').val('Got it. Thanks!').toggleClass('btn-primary btn-success');
+
 }
 function loaded() {
   console.log('rsvp form submission handler loaded');

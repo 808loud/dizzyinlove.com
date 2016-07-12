@@ -33,65 +33,59 @@ block content
 
   #people.container
     include layouts/people
-    
+  
   #event.container
     h2 Event Details
     .row
-      .col-sm-12 More information coming soon.
-  //-
-    <div class="container" id="event">
-    <h2>Event Details</h2>
-    <div class="row">
-    <div class="col-sm-3">
-    <h3>Ceremony</h3>
-    <h4>2:00pm</h4>
-    <h5>Dean and Karen Erickson"s<br>
-    303 Lake Avenue North<br>
-    Spicer, MN</h5>
-    </div>
-    <div class="col-sm-3">
-    <h3>Social Hour</h3>
-    <h4>3:00pm</h4>
-    <h5>Prairie Woods Environmental Learning Center<br>
-    12718 10th St NE<br>
-    Spicer, MN</h5>
-    </div>
-    <div class="col-sm-3">
-    <h3>Dinner</h3>
-    <h4>5:00pm</h4>
-    <h5>Prairie Woods</h5>
-    </div>
-    <div class="col-sm-3">
-    <h3>Dance</h3>
-    <h4>7:00pm - 10:30pm</h4>
-    <h5>Prairie Woods</h5>
-    </div>
-    </div>
-    </div> <!-- /container
-  //-
-    <section id="map-ericksons" class="map">
-    </section>
+      .col-xs-6.col-sm-3
+        h3 Ceremony
+        h4 2:00pm
+        address
+          | Dean and Karen Erickson's<br>
+          | 303 Lake Avenue North<br>
+          | Spicer, MN
+      .col-xs-6.col-sm-3
+        h3 Social Hour
+        h4 3:00pm
+        address
+          | Prairie Woods Environmental Learning Center<br>
+          | 12718 10th St NE<br>
+          | Spicer, MN
+      .col-xs-6.col-sm-3
+        h3 Dinner
+        h4 5:00pm
+        address
+          | Prairie Woods Environmental Learning Center
+      .col-xs-6.col-sm-3
+        h3 Dance
+        h4 7:00pm - 10:30pm
+        address
+          | Prairie Woods Environmental Learning Center
+          
+  
+  #map-ericksons.map
+
+  script(src='https://maps.googleapis.com/maps/api/js')
+  script(src='scripts/map-ericksons.js')
+    
   #hashtag.container
     h2 Wedding Hashtag
     .row
       .col-sm-6
-        br
-        h1 #dizzyinlove
-        br
-        br
+        h3.h1 #dizzyinlove
         p.lead P.S. In case you were wondering...
         p Our couple name is Dizzy (David + Lizzy).
         p.small
-          | (It"s also the name of our award-seeking rap duo. See the included album art from our upcoming album release. It"s gonna be hot fire).
+          | (It's also the name of our award-seeking rap duo. See the included album art from our upcoming album release. It's gonna be hot fire).
       .col-sm-6
-        img.img-responsive(src="images/dizzy-album-art.jpg")
+        img.img-responsive(src='images/dizzy-album-art.jpg')
+        
+  #photos
+    .container: h2 Photos
+    include layouts/gallery-engagement
+      
   #gifts.container
     include layouts/gift-registries
-    
-  #gallery
-    .container
-      h2 Gallery
-    include layouts/gallery-engagement
             
   #rsvp.container
     h2 Don't Forget to RSVP
