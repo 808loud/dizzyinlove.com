@@ -1,5 +1,3 @@
-- var activeSlide = '0'
-- var galleryPath = 'images/gallery-engagement/';
 -
   var gallerySlides = [
     'cuddyphoto-Winter2016-023.jpg', 
@@ -9,6 +7,8 @@
     'cuddyphoto-Winter2016-078.jpg',
     'cuddyphoto-Winter2016-080.jpg'
   ];
+- var imgPath = 'images/gallery-engagement/';
+- var activeSlide = '0'
 
   
 //- .container-fluid
@@ -24,7 +24,7 @@
     - for (var i = 0; i < gallerySlides.length; i++)
       - defaultSlide = (i == '0' ? 'active' : '')
       .item(class='#{defaultSlide}')
-        img(src="#{galleryPath}#{gallerySlides[i]}" alt='alt')
+        img(src="#{imgPath}#{gallerySlides[i]}" alt='alt')
   // Controls
   a.left.carousel-control(href="#gallery_engagement" role="button" data-slide="prev")
     span.glyphicon.glyphicon-chevron-left(aria-hidden="true")
