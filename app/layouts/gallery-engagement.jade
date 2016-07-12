@@ -1,0 +1,34 @@
+- var activeSlide = '0'
+- var galleryPath = 'images/gallery-engagement/';
+-
+  var gallerySlides = [
+    'cuddyphoto-Winter2016-023.jpg', 
+    'cuddyphoto-Winter2016-062.jpg',
+    'cuddyphoto-Winter2016-042.jpg',
+    'cuddyphoto-Winter2016-068.jpg',
+    'cuddyphoto-Winter2016-078.jpg',
+    'cuddyphoto-Winter2016-080.jpg'
+  ];
+
+  
+//- .container-fluid
+//-   .row
+#gallery_engagement.carousel.slide(data-ride="carousel")
+  // Indicators
+  ol.carousel-indicators
+    - for (var i = 0; i < gallerySlides.length; i++)
+      - defaultSlide = (i == '0' ? 'active' : '')
+      li(data-target='#gallery_engagement' data-slide-to='#{i}' class='#{defaultSlide}')
+  // Slides
+  .carousel-inner(role="listbox")
+    - for (var i = 0; i < gallerySlides.length; i++)
+      - defaultSlide = (i == '0' ? 'active' : '')
+      .item(class='#{defaultSlide}')
+        img(src="#{galleryPath}#{gallerySlides[i]}" alt='alt')
+  // Controls
+  a.left.carousel-control(href="#gallery_engagement" role="button" data-slide="prev")
+    span.glyphicon.glyphicon-chevron-left(aria-hidden="true")
+    span.sr-only Previous
+  a.right.carousel-control(href="#gallery_engagement" role="button" data-slide="next")
+    span.glyphicon.glyphicon-chevron-right(aria-hidden="true")
+    span.sr-only Next

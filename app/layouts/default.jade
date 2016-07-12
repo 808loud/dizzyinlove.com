@@ -8,17 +8,16 @@ html.no-js
     link(rel='icon' type='image/png' href='favicon-32x32.png' sizes='32x32')
     link(rel='icon' type='image/png' href='favicon-16x16.png' sizes='16x16')
 
-    
     link(href='https://fonts.googleapis.com/css?family=Roboto:400,700,900', rel='stylesheet', type='text/css')
     link(href='https://fonts.googleapis.com/css?family=Reenie+Beanie', rel='stylesheet', type='text/css')
     link(href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,700italic', rel='stylesheet', type='text/css')
     
     link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css')
 
-    //- // build:css styles/vendor.css
-    //- // bower:css
- // endbower
-    //- // endbuild
+    //- build:css styles/vendor.css
+    //- bower:css
+    //- endbower
+    //- endbuild
 
     // build:css styles/main.css
     link(rel='stylesheet' href='styles/main.css')
@@ -27,9 +26,9 @@ html.no-js
     script(type='text/javascript', src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js')
     script(src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js')
 
-    // build:js scripts/vendor/modernizr.js
+    //- build:js scripts/vendor/modernizr.js
     //- script(src='../bower_components/modernizr/modernizr.js')
-    // endbuild
+    //- endbuild
 
   body(data-spy='scroll', data-target='#navbar')
     | <!--[if lt IE 10]>
@@ -83,7 +82,7 @@ html.no-js
     // endbower
     // endbuild
 
-    // build:js scripts/plugins.js
+    //- build:js scripts/plugins.js
     //- script(src='../bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js')
     //- script(src='../bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js')
     //- script(src='../bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js')
@@ -96,8 +95,8 @@ html.no-js
     //- script(src='../bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js')
     //- script(src='../bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js')
     //- script(src='../bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js')
-    // endbuild
+    //- endbuild
 
-    // build:js scripts/main.js
+    // build:js scripts/scripts.js
     script(src='scripts/main.js')
     // endbuild
