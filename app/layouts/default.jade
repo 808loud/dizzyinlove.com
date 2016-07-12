@@ -40,17 +40,32 @@ html.no-js
     
     block content
     
-    .container-fluid.footer
+    
+    footer.footer.clearfix
       .container
-        footer
-          p
-            i.glyphicon.glyphicon-copyright-mark
-            |  DizzyWebDesign
-          p
-            i.glyphicon.glyphicon-heart
-            |  Crafted with love and 
-            a(href='http://getbootstrap.com/') Bootstrap
-          p.script-font — David & Lizzy
+        .row
+          .col-sm-3
+            span.glyphicon.glyphicon-copyright-mark.lead
+            p DizzyWebDesign
+            p.script-font — David & Lizzy
+          .col-sm-3
+            span.glyphicon.glyphicon-inbox.lead
+            h6.sr-only email
+            p
+              a.on-human hello.world@fake.email
+          .col-sm-3
+            span.glyphicon.glyphicon-phone.lead
+            h6.sr-only phone
+            p David: 701.212.3499
+            p Liz: 320.444.2733
+          .col-sm-3
+            span.glyphicon.glyphicon-heart.lead
+            h6.sr-only credits
+            p Built with 
+              a(href='http://getbootstrap.com/' target="_blank") Bootstrap
+              |  and 
+              a(href='https://github.com/808loud/dizzyinlove.com/' target="_blank") GitHub
+
 
     // Google Analytics: change UA-XXXXX-X to be your site's ID.
     script.

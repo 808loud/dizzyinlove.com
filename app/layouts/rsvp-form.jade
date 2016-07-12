@@ -1,0 +1,40 @@
+form#rsvp_form(role='form' method='POST' action='https://script.google.com/macros/s/AKfycbxzMZIaH6-lHGMENlTmeKCyxwyyN01GaltnVrTDm6wfPhpRWdE/exec')
+  .row
+    .col-md-4
+      .form-group
+        label Email address
+        input#email.form-control(type='email' name='email' required='required' placeholder='hope_2_C_U@the.big.event' pattern='[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,63}$')
+      .form-group
+        label(for='totalAttending') Please RSVP using this dropdown
+        select#totalAttending.form-control(name='totalAttending' required='required' tabindex='1')
+          option(value='' selected disabled) RSVP
+          optgroup(label='Number of people tearing up the dance floor:')
+            option(value='1') Solo mission. Look out.
+            option(value='2') Two, and we will bring our dancing shoes
+            option(value='3') Three, so we can sing in beautiful harmony
+            option(value='4') Four of us will be ready to rock
+            option(value='5') Five and the kids will likely eat lots of sugar on the way
+            option(value='>5') We are bringing the party
+          optgroup(label='Unable to attend:')
+            option(value='0') Visiting uncle Ed that weekend
+            option(value='0') On a top secret spy mission
+            option(value='0') Will forever regret this decision
+            option(value='0') Literally can't even
+    .col-md-8
+      .form-group
+        label(for='guestNames') Please list the names of all attendees below (including your own)
+        textarea#guestNames.form-control(name='guestNames' rows='3' tabindex='1' placeholder='Jeremy Grey\nJohn Beckwith\netc.')
+      .form-group
+        label(for='songRequests') What songs will get you out on the dance floor?
+        textarea#songRequests.form-control(name='songRequests' placeholder='Baby Got Back - Sir Mix A Lot\nMy Heart Will Go On - Celine Dion\netc.' rows='3' tabindex='1')
+      .form-group
+        label(for='message') Anything else we should know?
+        textarea#message.form-control(name='message' placeholder='(Optional) Food allergies, mobility concerns, etc.' rows='2' tabindex='1')
+      .form-group
+        input.btn.default-btn(type='submit' name='submit', value='Submit')
+    .row
+      .col-sm-12
+        p.contact-success Your Message has been Successfully Sent!
+        p.contact-error Error! Something went wrong!
+        
+script(src='scripts/gform-submission-handler.js')

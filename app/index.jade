@@ -12,15 +12,13 @@ block content
     .row
       .col-sm-6.col-xs-12
         h4 How we met
-        p
-          | Liz and David both went to the University of St. Thomas, and majored in Journalism. They both graduated in the class of 2010. You'd think that this was where they met, but surprisingly they never met in college.
+        p Liz and David both went to the University of St. Thomas, and majored in Journalism. They both graduated in the class of 2010. You'd think that this was where they met, but surprisingly they never met in college.
         p It wasn't until May 10th, 2012, that the two first met through a mutual friend.
         p They bonded quickly, and starting in September, they began talking freqently.
         img.img-responsive(src='images/story/st-thomas.jpg', height='250', width='585', alt='University of St. Thomas')
       .col-sm-6.col-xs-12
         h4 Our first date
-        p
-          | On December 13, 2012, Liz bravely attended David's company party as his +1. You would think this would be their first date. But Liz is adamant to this day that this was not their first date. I guess it doesn't count if it's free food and drinks...
+        p On December 13, 2012, Liz bravely attended David's company party as his +1. You would think this would be their first date. But Liz is adamant to this day that this was not their first date. I guess it doesn't count if it's free food and drinks...
         p On January 4th, 2013, they went on their first date at La Grolla in St. Paul.
         img.img-responsive(src='images/story/st-paul-la-grolla.jpg', height='250', width='585', alt='St. Paul, MN')
     hr
@@ -209,85 +207,35 @@ block content
       .col-xs-6.col-sm-3
         a(href='http://www.amazon.com/gp/registry/wedding/3EZ33N5HOWS5U')
           img.img-responsive(src='images/gifts/amazon.png', height='150', width='150', alt='Amazon')
-  #gallery.container
+  //- #gallery.container
     h2 Gallery
     .container-fluid
       .row
         #gallery-engagement.carousel.slide(data-ride='carousel')
           //- Indicators
           ol.carousel-indicators
-            li.active(data-target='#gallery-engagement', data-slide-to='0')
-            li(data-target='#gallery-engagement', data-slide-to='1')
-            li(data-target='#gallery-engagement', data-slide-to='2')
-            li(data-target='#gallery-engagement', data-slide-to='3')
-            li(data-target='#gallery-engagement', data-slide-to='4')
-            li(data-target='#gallery-engagement', data-slide-to='5')
+            li.active(data-target='#gallery-engagement' data-slide-to='0')
+            li(data-target='#gallery-engagement' data-slide-to='1')
+            li(data-target='#gallery-engagement' data-slide-to='2')
+            li(data-target='#gallery-engagement' data-slide-to='3')
+            li(data-target='#gallery-engagement' data-slide-to='4')
+            li(data-target='#gallery-engagement' data-slide-to='5')
           //- Wrapper for slides
           .carousel-inner(role='listbox')
-            .item.active
-              img(src='images/gallery-engagement/cuddyphoto-Winter2016-023.jpg', alt='')
-            .item
-              img(src='images/gallery-engagement/cuddyphoto-Winter2016-062.jpg', alt='')
-            .item
-              img(src='images/gallery-engagement/cuddyphoto-Winter2016-042.jpg', alt='')
-            .item
-              img(src='images/gallery-engagement/cuddyphoto-Winter2016-068.jpg', alt='')
-            .item
-              img(src='images/gallery-engagement/cuddyphoto-Winter2016-078.jpg', alt='')
-            .item
-              img(src='images/gallery-engagement/cuddyphoto-Winter2016-080.jpg', alt='')
+            .item.active: img(src='images/gallery-engagement/cuddyphoto-Winter2016-023.jpg' alt='')
+            .item: img(src='images/gallery-engagement/cuddyphoto-Winter2016-062.jpg' alt='')
+            .item: img(src='images/gallery-engagement/cuddyphoto-Winter2016-042.jpg' alt='')
+            .item: img(src='images/gallery-engagement/cuddyphoto-Winter2016-068.jpg' alt='')
+            .item: img(src='images/gallery-engagement/cuddyphoto-Winter2016-078.jpg' alt='')
+            .item: img(src='images/gallery-engagement/cuddyphoto-Winter2016-080.jpg' alt='')
           //- Controls
-          a.left.carousel-control(href='#gallery-engagement', role='button', data-slide='prev')
+          a.left.carousel-control(href='#gallery-engagement' role='button' data-slide='prev')
             span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
             span.sr-only Previous
-          a.right.carousel-control(href='#gallery-engagement', role='button', data-slide='next')
+          a.right.carousel-control(href='#gallery-engagement' role='button' data-slide='next')
             span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
             span.sr-only Next
+            
   #rsvp.container
     h2 Don't Forget to RSVP
-      .row
-        .col-sm-9.divider
-          form.contact_form(role='form', action='https://script.google.com/a/macros/808loud.com/s/AKfycby5mjN8k9kfpPobxtZnmz1PyMKre-1ilbyO0YsjOneUV2l1XVM/exec')
-            .row
-              .col-sm-4
-                .form-group
-                  input#email.form-control(type='text' name='email' placeholder='Email address' required='required')
-                .form-group
-                  select#totalAttending.form-control(name='totalAttending' required='required' tabindex='1')
-                    option(selected disabled) RSVP
-                    optgroup(label='How many will be tearing up the dance floor?')
-                      option(value='1') Solo mission. Look out.
-                      option(value='2') 2 and we will bring our dancing shoes
-                      option(value='3') 3 so we can sing in beautiful harmony
-                      option(value='4') 4 of us will be ready to rock
-                      option(value='5') 5 and the kids will likely eat lots of sugar on the way
-                      option(value='>5') 6+ bringing the party
-                    optgroup(label='Unable to attend ...')
-                      option(value='0') Visiting uncle Ed that weekend
-                      option(value='0') On a top secret spy mission
-                      option(value='0') Will forever regret this decision
-                      option(value='0') Literally can't even 
-              .col-sm-8
-                .form-group
-                  textarea#guestNames.form-control(name='guestNames', tabindex='1', rows='3', placeholder='Please list the names of all attendees here')
-                .form-group
-                  textarea#songRequests.form-control(name='songRequests', placeholder='What songs will get you out on the dance floor?')
-                .form-group
-                  textarea#misc.form-control(name='msc', placeholder='Anything else we should know?')
-                .form-group
-                  input.btn.default-btn(type='submit', name='submit', value='Submit')
-              .row
-                .col-sm-12
-                  p.contact-success Your Message has been Successfully Sent!
-                  p.contact-error Error! Something went wrong!
-        .col-sm-3
-          h5 contact info
-            i.fa.fa-paper-plane
-            .address-phone
-              h4 email
-              span dizzy@808loud.com
-            i.fa.fa-phone
-            .address-phone
-              h4 phone
-              p David: 701.212.3499
-              p Liz: 320.444.2733
+    include layouts/rsvp-form
