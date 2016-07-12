@@ -1,4 +1,4 @@
-var formID = "rsvp_form";
+var formID = 'rsvp_form';
 
 // get all data in form and return object
 function getFormData() {
@@ -43,6 +43,6 @@ function loaded() {
   console.log('rsvp form submission handler loaded');
   // bind to the submit event of our form
   var form = document.getElementById(formID);
-  form.addEventListener("submit", handleFormSubmit, false);
+  form.addEventListener('submit', handleFormSubmit, false);
 };
 document.addEventListener('DOMContentLoaded', loaded, false);
