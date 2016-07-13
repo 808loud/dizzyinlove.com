@@ -1,4 +1,8 @@
 {
+  "name": "dizzinlove.com",
+  "description": ":dizzy_face: wedding website",
+  "respository": "808loud/dizzinlove.com",
+  "author": "David Monson",
   "private": true,
   "engines": {
     "node": ">=4"
