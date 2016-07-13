@@ -65,10 +65,10 @@ h2 Meet the Wedding Party
   - if ((i % 2) == 0) {
   //- open a row, but don't close it
   != '<div class="row">'
-    .col-xs-6.middie
-      .row.innie
+    .col-xs-6
+      .row
         .col-sm-6.col-sm-push-6
-          img.img-responsive(src='#{imgPath}#{people[i].imgSrc}' width='227' height='170' alt='')
+          img.img-responsive(src='#{imgPath}#{people[i].imgSrc}' alt='')
         .col-sm-6.col-sm-pull-6
           h4 #{people[i].name}
           h5 #{people[i].role}
@@ -80,7 +80,7 @@ h2 Meet the Wedding Party
     .col-xs-6
       .row
         .col-sm-6
-          img.img-responsive(src='#{imgPath}#{people[i].imgSrc}' width='227' height='170' alt='')
+          img.img-responsive(src='#{imgPath}#{people[i].imgSrc}' alt='')
         .col-sm-6
           h4 #{people[i].name}
           h5 #{people[i].role}
