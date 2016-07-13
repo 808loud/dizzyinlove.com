@@ -1,6 +1,7 @@
 {
-  "directory": "bower_components"
+  "directory": "bower_components",
   "scripts": {
     "postinstall": "wiredep -s app/default.jade"
+    "postuninstall": "wiredep -s app/default.jade"
   }
 }
