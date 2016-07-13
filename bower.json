@@ -2,8 +2,7 @@
   "name": "dizzyinlove-com",
   "private": true,
   "dependencies": {
-    "jquery": "~2.1.1",
-    "bootstrap": "v4.0.0-alpha.2"
+    "jquery": "~2.1.1"
   },
   "devDependencies": {
     "chai": "^3.5.0",
