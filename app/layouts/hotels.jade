@@ -1,0 +1,99 @@
+h2 Hotel information
+
+p 
+  | We'll do our best to keep this list updated with the latest info.
+  | If there's any information that is incorrect or outdated, please let us know at 
+  a.on-timeout spam@spoof.email
+  | . 
+
+//- Mixin for hotel display
+//- Note: this sets the region to MN ;-)
+- var stars = '0'
+mixin hotel(org, streetAddress, city, phone, url, stars)
+  li.address-hotel.vcard
+    // != is used to echo a parameter without escaping the contents
+    // specifically in this case, to dispaly HTML entities
+    .org.fn!= org
+    .adr
+      .street-address= streetAddress
+      span.locality= city
+      | , 
+      span.region MN
+    .tel= phone
+    if (url)
+      a.url.btn.btn-default(href= url target='_blank') Website
+    if (stars) 
+      .rating
+        span.tt(data-toggle='tooltip' data-placement='right' title='Hotel classification')
+          while stars--
+            span.glyphicon.glyphicon-star.text-muted
+    .message
+      block
+
+ul.list-inline
+
+  +hotel(
+    'Northern Inn &amp; Suites', 
+    '154 Lake Avenue South', 
+    'Spicer', 
+    '(320) 796-2091')
+    p.text-info Only hotel in Spicer
+    p.text-info Mention Erickson-Monson wedding
+
+  +hotel(
+    'Country Inn &amp; Suites', 
+    '201 28th Avenue SE', 
+    'Willmar', 
+    '(320) 214-0300', 
+    'https://www.countryinns.com/willmar-hotel-mn-56201/mnwillma', 
+    2)
+  
+  +hotel(
+    'Best Western Plus',  
+    '2100 Hwy 12 East', 
+    'Willmar', 
+    '(320) 235-6060', 
+    'http://book.bestwestern.com/bestwestern/US/MN/Willmar-hotels/BEST-WESTERN-PLUS-Willmar/Hotel-Overview.do?propertyCode=24139')
+  
+  +hotel(
+    'Holiday Inn Express &amp; Suites', 
+    '250 23rd Street SE', 
+    'Willmar', 
+    '(320) 231-2601',
+    'http://www.ihg.com/holidayinnexpress/hotels/us/en/willmar/stcwm/hoteldetail',
+    3)
+  
+  +hotel(
+    'AmericInn', 
+    '2404 US Hwy 12', 
+    'Willmar', 
+    '(320) 231-1962', 
+    'http://www.americinn.com/hotels/mn/willmar', 
+    2)
+  
+  +hotel(
+    'Super 8', 
+    '2655 South 1st Street', 
+    'Willmar', 
+    '(320) 231-1962', 
+    'http://www.super8.com/hotels/minnesota/willmar/super-8-willmar/hotel-overview', 
+    2)
+  
+  +hotel(
+    'Days Inn', 
+    '225 28th Street SE', 
+    'Willmar', 
+    '(320) 231-1275',
+    2)
+  
+  +hotel(
+    'Lakeview Inn', 
+    '1212 North Business Hwy 71', 
+    'Willmar', 
+    '(320) 235-3424')
+  
+  +hotel(
+    'Cozy Inn', 
+    '1501 19th Avenue SE', 
+    'Willmar', 
+    '(320) 222-2699')
