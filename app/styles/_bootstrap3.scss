@@ -79,10 +79,10 @@ html, body {
 }
 
 #hotels {
-  .address-hotel {
+  .cards > li {
     margin: 0.5em;
     padding: 1em;
-    padding-right: 0.5em;
+    // padding-right: 0.5em;
     border-radius: 5px;
     background-color: #f8f8f8;
     vertical-align: top;

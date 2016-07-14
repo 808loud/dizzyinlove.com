@@ -30,7 +30,7 @@ mixin hotel(org, streetAddress, city, phone, url, stars)
     .message
       block
 
-ul.list-inline
+ul.cards.list-inline
 
   +hotel(
     'Northern Inn &amp; Suites', 
@@ -84,16 +84,28 @@ ul.list-inline
     '225 28th Street SE', 
     'Willmar', 
     '(320) 231-1275',
+    'http://www.daysinn.com/hotels/minnesota/willmar/days-inn-willmar/hotel-overview',
     2)
   
   +hotel(
     'Lakeview Inn', 
     '1212 North Business Hwy 71', 
     'Willmar', 
-    '(320) 235-3424')
+    '(320) 235-3424',
+    'http://www.lakeviewinnmn.com/',
+    2)
   
   +hotel(
     'Cozy Inn', 
     '1501 19th Avenue SE', 
     'Willmar', 
-    '(320) 222-2699')
+    '(320) 222-2699',
+    'http://www.willmarcozyinn.com/')
+    
+  li
+    p Other ideas:
+      ul
+        li Airbnb
+        li VRBO
+        li Spicer Castle
+      
