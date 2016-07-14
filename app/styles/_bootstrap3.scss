@@ -55,7 +55,7 @@ html, body {
   background-color: #000;
   text-align: center;
   width: 100%;
-  
+
   .item {
     height: 500px;
 
@@ -77,6 +77,24 @@ html, body {
   height: 50%;
   margin-top: 2em;
 }
+
+#hotels {
+  .address-hotel {
+    margin: 0.5em;
+    padding: 1em;
+    padding-right: 0.5em;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+    vertical-align: top;
+    .url,
+    .rating,
+    .message {
+      margin-top: 1em;
+      max-width: 200px;
+    }
+  }
+}
+
 
 .footer {
   margin-top: 2em;

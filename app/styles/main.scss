@@ -25,8 +25,9 @@
 // bower:scss
 // endbower
 
-// import old css
-@import 'old';
+// import bootstrap 3 overrides
+// TODO switch to bootstrap 4 and enable flexbox
+@import 'bootstrap3';
 
 .browserupgrade {
   margin: 0.2em 0;
