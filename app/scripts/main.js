@@ -21,7 +21,7 @@ $(document).ready(function(){
 
     // TODO flexbox would solve for this
     var widest = 0;
-    $(".vcard").each(function () {
+    $('.vcard').each(function () {
       widest = Math.max(widest, $(this).outerWidth());
     }).width(widest);
 
