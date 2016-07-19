@@ -98,12 +98,40 @@ block content
           | Prairie Woods Environmental<br>
           | 12718 10th Street NE<br>
           | Spicer, MN
+    hr
+    .row
+      .col-xs-12
+        h4 Attire
+        p This will be an outdoor wedding. Please dress in formal yet comfortable attire. 
+        h4 Weather
+        p In case of inclement weather, please check this website for any updates.
           
   #directions
     #map_canvas
   
+  //- shuttleIcon string includes trailing space
+  - var shuttleIcon = '<span class="glyphicon glyphicon-flag"></span> '
+  - var shuttleService = shuttleIcon + 'Shuttle service'
   #hotels.container
     include layouts/hotels
+    
+  #shuttle.container
+    h2 Shuttle Service
+    .row
+      .col-sm-6
+        p
+          | Parking is limited near the ceremony venue. 
+          | Therefore, we ask that guests who are able please park in the parking area noted above. 
+          | A shuttle will be provided between the parking area and the ceremony.
+        p
+          | After the ceremony, the shuttle will bring guests back to the parking area, 
+          | and it will also bring guests to the reception venue.
+        p
+          | Throughout the evening, the shuttle will make rounds between the reception venue, 
+          | select hotels in Willmar (marked with the !{shuttleIcon} icon), 
+          | and the Northern Inn &amp Suites in Spicer. 
+        p
+          | There will be priority parking available at each venue for those with mobility concerns or other special requirements.
   
   #hashtag.container
     h2 Wedding Hashtag
@@ -119,6 +147,7 @@ block content
         
   #photos
     .container: h2 Photos
+    //- this include is intended to reside outside .container
     include layouts/gallery-engagement
       
   #gifts.container
