@@ -62,12 +62,24 @@ block content
       .col-sm-6.col-xs-12
         h4 How he proposed
         img.img-responsive(src='images/north-shore.jpg' width='585' height='250' alt='North Shore, MN')
-        p Coming soon &hellip;
+        p
+          | David and Liz were on a mini vacation on the North Shore of Lake Superior with friends.
+          | They had planned to visit Gooseberry Falls, and that was to be where the proposal would happen.
+          | David asked his friends to bring a camera for the big event, 
+          | and they planned a hike along Gitchi Gummi Trail, featuring a scenic overlook.
+        p
+          | They didn't see a single other person on the trail until they got to the overlook.
+          | Luckily the strangers scattered pretty quickly, and David gave the signal that it was happening.
+        p
+          | He held her hands, and told her he loved her.
+          | Then he got down on one knee, and popped the question.
+          | Liz blacked-out a little bit, but luckily she was still able to say "yes"!
+        
 
   #people.container
     include layouts/people
   
-  #event.container
+  //- #event.container
     h2 Event Details
     .row
       .col-sm-4
@@ -79,7 +91,7 @@ block content
           | Spicer, MN
         h3 Shuttle
         p
-          | Shuttle service provided for guests at select hotels. 
+          | Shuttle service provided for guests at parking area and select hotels. 
           a(href='#shuttle') See details below
           | .
       .col-sm-4
@@ -110,19 +122,21 @@ block content
         p Cocktail attire requested.
         h4 Weather Updates
         p
-        | The ceremony and reception will be outdoors. 
-        | In case of inclement weather, please check this website for any updates.
+          | The ceremony and reception will be outdoors. 
+          | In case of inclement weather, please check this website for any updates.
+        p.text-warning
+          | There may be scattered showers, so bring an umbrella just in case
           
-  #directions
+  //- #directions
     #map_canvas
   
   //- shuttleIcon string includes trailing space
   - var shuttleIcon = '<span class="glyphicon glyphicon-flag"></span> '
   - var shuttleService = shuttleIcon + 'Shuttle service'
-  #hotels.container
+  //- #hotels.container
     include layouts/hotels
     
-  #shuttle.container
+  //- #shuttle.container
     h2 Shuttle Service
     .row
       .col-sm-6
@@ -171,9 +185,9 @@ block content
     //- this include is intended to reside outside .container
     include layouts/gallery-engagement
       
-  #gifts.container
+  //- #gifts.container
     include layouts/gift-registries
             
-  #rsvp.container
+  //- #rsvp.container
     h2 Don't Forget to RSVP
     include layouts/rsvp-form
